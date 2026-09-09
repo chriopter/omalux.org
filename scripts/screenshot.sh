@@ -13,7 +13,7 @@ import json, os, pathlib, shutil, subprocess, sys, tempfile
 root = pathlib.Path(sys.argv[1]).resolve()
 site = pathlib.Path(sys.argv[2]).resolve()
 args = sys.argv[3:]
-if not (root / "bin/dev").is_file():
+if not (root / "dev/scripts/start").is_file():
     raise SystemExit("App checkout not found; set OMALUX_APP_ROOT to the Omalux repository")
 if len(args) > 3:
     raise SystemExit('Expected [INPUT_PHOTO [OUTPUT_PNG [filters|presets]]]')
@@ -32,7 +32,7 @@ with tempfile.TemporaryDirectory(prefix='omalux-website-shot-') as tmp:
         'QT_FORCE_STDERR_LOGGING': '1', 'QT_QUICK_BACKEND': 'rhi', 'QSG_RHI_BACKEND': 'opengl', 'XDG_CONFIG_HOME': str(tmp / 'config'),
         'OMALUX_SMOKE_SCRIPT': str(script)}
     # A private development session preserves the user's current image and settings.
-    subprocess.run([str(root / 'bin/dev'), str(source)], cwd=root, env=env, check=True, timeout=240)
+    subprocess.run([str(root / 'dev/scripts/start'), str(source)], cwd=root, env=env, check=True, timeout=240)
     if not capture.is_file() or not capture.stat().st_size:
         raise SystemExit('Capture failed; previous screenshot retained')
     output.parent.mkdir(parents=True, exist_ok=True)
