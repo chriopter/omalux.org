@@ -17,9 +17,13 @@ The script reads `presets/**/preset.dtstyle`, uses the shared `assets/images/bea
 
 Outputs in `public/presets/`:
 
-- `index.json`: names, groups, descriptions, enabled/disabled style module names, preview URLs and dimensions. `preview.source` and `preview.darktable_version` record rendering provenance.
-- `original.webp`: the engine's initial image before applying a style.
-- `images/<bundle>/preview.webp`: the actual styled image, fitted within 640 × 480 pixels without cropping or stretching (currently 640 × 427).
+- `<bundle>/preset.json`: name, group, description, style modules and preview provenance/dimensions.
+- `<bundle>/preview.webp`: the styled image, fitted within 640 × 480 pixels without cropping or stretching (currently 640 × 427).
+- `original.webp`: the shared engine baseline before applying a style.
+
+Bundle paths mirror the app's preset folders, for example `experimental/experimental-nightstreet/`. Image names are fixed conventions, so JSON does not repeat the bundle ID or image URL. `preview.source` and `preview.darktable_version` record how each image was rendered.
+
+The page discovers `**/preset.json` at build time through `src/lib/presets.ts`, derives image URLs from the folders and sorts the groups. There is no central `index.json` to maintain. Missing bundle previews fail the build.
 
 Only web images and catalogue metadata are copied. Styles, LUTs and machine-local paths remain in the app checkout. Generation stages every output before replacing the old catalogue; failed renders retain the old gallery. Concurrent generator runs are rejected. Re-running removes stale generated entries as part of replacement.
 

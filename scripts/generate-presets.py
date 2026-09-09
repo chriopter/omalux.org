@@ -8,7 +8,6 @@ from pathlib import Path
 import shutil
 import subprocess
 import tempfile
-from urllib.parse import quote
 
 SITE = Path(__file__).resolve().parents[1]
 
@@ -56,27 +55,23 @@ def generate(app):
         with tempfile.TemporaryDirectory(prefix='.presets-stage-', dir=SITE) as staging:
             staged = Path(staging) / 'presets'
             staged.mkdir()
-            original = web_image(renders / 'original.png', staged / 'original.webp')
-            original['image'] = '/presets/original.webp'
-            entries = []
+            web_image(renders / 'original.png', staged / 'original.webp')
             for id in ids:
                 item = catalog[id]
                 if item.get('error'):
                     raise ValueError(f"{id}: {item['error']}")
                 folder = Path(id).parent
-                output = Path('images') / folder / 'preview.webp'
+                output = folder / 'preview.webp'
                 dimensions = web_image(renders / (id + '.png'), staged / output)
                 group = ' · '.join(folder.parts[:-1]).replace('-', ' ').title() or 'Essentials'
                 modules = [{'name': m['name'], 'enabled': m['enabled']} for m in item.get('modules', [])]
-                entries.append(dict(id=folder.as_posix(), name=item['name'], group=group,
-                                    description=item['description'], modules=modules,
-                                    image='/presets/' + quote(output.as_posix(), safe='/'), **dimensions))
+                bundle = dict(version=1, name=item['name'], group=group,
+                              description=item['description'], modules=modules,
+                              preview=dict(source='assets/images/beach-volleyball.jpg',
+                                           darktable_version=manifest['darktable_version'], **dimensions))
+                (staged / folder / 'preset.json').write_text(
+                    json.dumps(bundle, ensure_ascii=False, indent=2) + '\n')
                 print(f"  {item['name']}: {dimensions['width']} × {dimensions['height']}", flush=True)
-            rank = {'Essentials': 0, 'Monochrome': 1, 'Film': 2, 'Experimental': 4}
-            entries.sort(key=lambda p: (rank.get(p['group'], 3), p['group'], p['id'] != 'neutral', p['name']))
-            data = dict(version=1, preview=dict(source='assets/images/beach-volleyball.jpg',
-                        darktable_version=manifest['darktable_version']), original=original, presets=entries)
-            (staged / 'index.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
             destination = public / 'presets'
             backup = Path(staging) / 'previous'
             if destination.exists():
@@ -87,7 +82,7 @@ def generate(app):
                 if backup.exists():
                     backup.rename(destination)
                 raise
-    print(f'Updated public/presets/ with {len(entries)} looks. Run npm run build, review, then commit.')
+    print(f'Updated public/presets/ with {len(ids)} looks. Run npm run build, review, then commit.')
 
 
 def main():
