@@ -16,3 +16,5 @@ Requires Node.js 22.12 or newer. Build with `npm run build`.
 - `scripts/screenshots.sh` — capture the app from a sibling `../omalux` checkout, or set `OMALUX_APP_ROOT`.
 
 The app repository references screenshots through their public website URLs.
+
+- `npm run generate:presets` — render the preset gallery using local darktable and the sibling app checkout. See [Preset gallery](docs/presets.md).

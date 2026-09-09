@@ -1,0 +1,50 @@
+---
+interface Props { title?: string; description?: string; }
+const { title = 'Omalux', description = 'A focused photo editing interface for Omarchy, based on darktable.' } = Astro.props;
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content={description} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<title>{title}</title>
+<script is:inline>
+    (() => {
+        let theme = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        try { const saved = localStorage.getItem('omalux-theme'); if (saved === 'light' || saved === 'dark') theme = saved; } catch {}
+        document.documentElement.dataset.theme = theme;
+    })();
+</script>
+<style is:global>
+:root {
+				color-scheme: dark;
+				--bg: #0b0d12;
+				--fg: #e8eaf0;
+				--muted: #878da0;
+				--line: rgba(232, 234, 240, 0.1);
+				--accent: #7ea6ff;
+				--shadow: rgba(0, 0, 0, 0.55);
+				--surface: #14161f;
+			}
+			:root[data-theme="light"] {
+				color-scheme: light;
+				--bg: #f6f7fa;
+				--fg: #202735;
+				--muted: #596477;
+				--line: rgba(32, 39, 53, 0.16);
+				--accent: #315ac7;
+				--shadow: rgba(32, 39, 53, 0.15);
+				--surface: #fff;
+			}
+			* { margin: 0; padding: 0; box-sizing: border-box; }
+			html, body { height: 100%; }
+			body {
+				background: var(--bg);
+				color: var(--fg);
+				font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+				overflow-x: hidden;
+				-webkit-font-smoothing: antialiased;
+			}
+
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+</style>

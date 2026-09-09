@@ -1,78 +1,15 @@
 ---
+import SiteHead from '../components/SiteHead.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Omalux — a focused photo editing interface for Omarchy, based on darktable." />
-		<title>Omalux</title>
-		<script is:inline>
-			(() => {
-				document.documentElement.dataset.theme = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-			})();
-		</script>
-		<style>
-			:root {
-				color-scheme: dark;
-				--bg: #0b0d12;
-				--fg: #e8eaf0;
-				--muted: #878da0;
-				--line: rgba(232, 234, 240, 0.1);
-				--accent: #7ea6ff;
-				--shadow: rgba(0, 0, 0, 0.55);
-				--surface: #14161f;
-			}
-			:root[data-theme="light"] {
-				color-scheme: light;
-				--bg: #f6f7fa;
-				--fg: #202735;
-				--muted: #596477;
-				--line: rgba(32, 39, 53, 0.16);
-				--accent: #315ac7;
-				--shadow: rgba(32, 39, 53, 0.15);
-				--surface: #fff;
-			}
-			* { margin: 0; padding: 0; box-sizing: border-box; }
-			html, body { height: 100%; }
-			body {
-				background: var(--bg);
-				color: var(--fg);
-				font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-				overflow-x: hidden;
-				-webkit-font-smoothing: antialiased;
-			}
+<SiteHead />
+<style>
 			#scene { position: fixed; inset: 0; z-index: 0; }
 			.ui { position: relative; z-index: 1; min-height: 100vh; display: flex; flex-direction: column; }
-			header {
-				display: flex; align-items: center; justify-content: space-between;
-				padding: 0.65rem 1.5rem;
-			}
-			.logo {
-				display: inline-flex; align-items: center; min-height: 40px;
-			}
-			.logo img { display: block; width: 138px; height: 32px; filter: invert(1); }
-			:root[data-theme="light"] .logo img { filter: none; }
-			nav { display: flex; align-items: center; gap: 1.2rem; }
-			.theme-switch { display: grid; place-items: center; width: 40px; height: 40px; padding: 9px; border: 1px solid var(--line); border-radius: 50%; background: var(--bg); color: var(--fg); cursor: pointer; }
-			.theme-switch[hidden] { display: none; }
-			.theme-switch:hover { border-color: var(--accent); color: var(--accent); }
-			.theme-switch .moon { display: none; }
-			:root[data-theme="light"] .theme-switch .sun { display: none; }
-			:root[data-theme="light"] .theme-switch .moon { display: block; }
-			:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-			@media (max-width: 480px) { header { padding: 1rem; } nav { gap: 0.65rem; } }
-			@media (prefers-reduced-motion: reduce) { .status::before { animation: none; } #scene { display: none; } }
-			nav a {
-				color: var(--muted); text-decoration: none; font-size: 0.88rem;
-				display: inline-flex; align-items: center; gap: 0.45rem;
-				transition: color 0.2s ease;
-			}
-			nav a:hover { color: var(--fg); }
-			nav svg { width: 18px; height: 18px; fill: currentColor; }
-			nav .theme-switch svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 			main {
 				flex: 1; display: flex; flex-direction: column;
 				align-items: center; text-align: center;
@@ -137,32 +74,13 @@
 				border-radius: 5px; color: var(--muted); background: rgba(232,234,240,0.02);
 			}
 			.keys b { color: var(--fg); font-weight: 500; }
-			footer {
-				padding: 1.6rem 2rem;
-				display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
-				color: var(--muted); font-size: 0.8rem;
-				border-top: 1px solid var(--line);
-			}
-			footer a { color: var(--muted); text-decoration: none; }
-			footer a:hover { color: var(--fg); }
-		</style>
-	</head>
+			@media (prefers-reduced-motion: reduce) { .status::before { animation: none; } #scene { display: none; } }
+</style>
+</head>
 	<body>
 		<canvas id="scene" aria-hidden="true"></canvas>
 		<div class="ui">
-			<header>
-				<a class="logo" href="/" aria-label="Omalux home"><img src="/assets/omalux-logo.svg" width="138" height="32" alt="Omalux" /></a>
-				<nav>
-					<a href="https://github.com/chriopter/omalux">
-						<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-						GitHub
-					</a>
-					<button class="theme-switch" type="button" aria-label="Switch to light mode" title="Switch to light mode" hidden>
-						<svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
-						<svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.2A8.7 8.7 0 0 1 10.8 3.5a8.7 8.7 0 1 0 9.7 9.7Z"/></svg>
-					</button>
-				</nav>
-			</header>
+			<SiteHeader />
 			<main>
 				<h1>Develop your RAW photos without leaving the keyboard.</h1>
 				<p class="subtitle">A focused photo editing interface for Omarchy, based on <a href="https://www.darktable.org/">darktable</a>. Our UI, darktable’s image processing.</p>
@@ -173,7 +91,7 @@
 					</a>
 				</div>
 				<div class="status">Status: <b>darktable integration in development</b></div>
-				<p class="status">Current development preview, powered by darktable. Not released yet.</p>
+				<p class="status">Current development preview, powered by darktable.</p>
 				<div class="shot" data-slide="filters" aria-label="Current Omalux editing and preset views">
 					<div class="slide slide-filters" aria-hidden="false">
 					<img class="shot-dark" src="/app-screenshot-dark.png" width="1280" height="820" alt="Omalux powered by darktable — a beach photograph with exposure, contrast and color controls" />
@@ -192,35 +110,10 @@
 					<span><b>[?]</b> keys</span>
 				</div>
 			</main>
-			<footer>
-				<span>Omalux — open-source RAW editor for <a href="https://omarchy.org">Omarchy</a></span>
-				<span><a href="https://github.com/chriopter/omalux">github.com/chriopter/omalux</a></span>
-			</footer>
+			<SiteFooter />
 		</div>
 
-		<script is:inline>
-			(() => {
-				const root = document.documentElement;
-				const controls = document.querySelector(".theme-switch");
-				const system = matchMedia("(prefers-color-scheme: light)");
-				let explicit = false;
-				function apply(theme) {
-					root.dataset.theme = theme;
-					const label = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
-					controls.setAttribute("aria-label", label);
-					controls.title = label;
-				}
-				apply(root.dataset.theme);
-				controls.hidden = false;
-				controls.addEventListener("click", () => {
-					explicit = true;
-					apply(root.dataset.theme === "dark" ? "light" : "dark");
-				});
-				system.addEventListener("change", () => {
-					if (!explicit) apply(system.matches ? "light" : "dark");
-				});
-			})();
-		</script>
+
 		<script is:inline>
 			(() => {
 				const gallery = document.querySelector(".shot");
