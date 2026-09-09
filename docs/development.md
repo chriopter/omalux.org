@@ -44,4 +44,4 @@ npm run build
 npx wrangler deploy
 ```
 
-Workers Builds should use `chriopter/omalux.org`, branch `main`, root directory `/`, build command `npm run build` and deploy command `npx wrangler deploy`. The previous monorepo connection needs to be switched in the Cloudflare account owning `omalux-org`. This reconnection is pending: the locally authenticated account does not contain that Worker and cannot access its Builds configuration. Existing deployed content is unaffected, but automatic deployment from this new repository is not yet connected. Include all paths (`*`) for build triggers.
+Workers Builds is connected to `chriopter/omalux.org`, branch `main`, with root directory `/`, build command `npm run build` and deploy command `npx wrangler deploy`. Pushes to this repository trigger website builds. The app repository no longer contains the website. Include all paths (`*`) for build triggers.
