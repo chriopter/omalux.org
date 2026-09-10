@@ -24,10 +24,10 @@ def web_image(source, destination):
 
 
 def generate(app):
-    launcher = app / 'dev/start'
+    launcher = app / 'development/start'
     source = app / 'assets/images/beach-volleyball.jpg'
     if not launcher.is_file() or not source.is_file():
-        raise ValueError('Expected an Omalux checkout with dev/start and the shared beach image')
+        raise ValueError('Expected an Omalux checkout with development/start and the shared beach image')
     if not shutil.which('magick'):
         raise ValueError('ImageMagick (magick) is required')
     style_root = app / 'catalog/styles'
