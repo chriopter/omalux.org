@@ -30,7 +30,7 @@ def generate(app):
         raise ValueError('Expected an Omalux checkout with dev/start and the shared beach image')
     if not shutil.which('magick'):
         raise ValueError('ImageMagick (magick) is required')
-    style_root = app / 'styles'
+    style_root = app / 'catalog/styles'
     styles = sorted(style_root.rglob('style.dtstyle'))
     if not styles:
         raise ValueError('No style bundles found')
