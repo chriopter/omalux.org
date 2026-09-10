@@ -11,7 +11,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "generate-types": "wrangler types",
-    "generate:presets": "python3 scripts/generate-presets.py"
+    "generate:styles": "python3 scripts/generate-styles.py"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.2.3",

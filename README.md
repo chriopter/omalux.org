@@ -17,4 +17,4 @@ Requires Node.js 22.12 or newer. Build with `npm run build`.
 
 The app repository references screenshots through their public website URLs.
 
-- `npm run generate:presets` — render the preset gallery using local darktable and the sibling app checkout. See [Preset gallery](docs/presets.md).
+- `npm run generate:styles` — render the style gallery using local darktable and the sibling app checkout. See [Style gallery](docs/styles.md).

@@ -62,8 +62,8 @@ import SiteFooter from '../components/SiteFooter.astro';
 			}
 			.shot img { display: block; width: 100%; height: auto; }
 			.slide { grid-area: 1 / 1; min-width: 0; transition: opacity 450ms ease-in-out; }
-			.slide-presets { opacity: 0; }
-			.shot[data-slide="presets"] .slide-presets { opacity: 1; }
+			.slide-styles { opacity: 0; }
+			.shot[data-slide="styles"] .slide-styles { opacity: 1; }
 			@media (prefers-reduced-motion: reduce) { .slide { transition: none; } }
 			.keys {
 				margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center;
@@ -91,12 +91,12 @@ import SiteFooter from '../components/SiteFooter.astro';
 					</a>
 				</div>
 				<div class="status">Status: <b>darktable integration in development</b></div>
-				<div class="shot" data-slide="filters" aria-label="Current Omalux editing and preset views">
+				<div class="shot" data-slide="filters" aria-label="Current Omalux editing and style views">
 					<div class="slide slide-filters" aria-hidden="false">
 					<img class="shot-dark" src="/app-screenshot-dark.png" width="1280" height="820" alt="Omalux powered by darktable — a beach photograph with exposure, contrast and color controls" />
 					</div>
-					<div class="slide slide-presets" aria-hidden="true">
-					<img class="shot-dark" src="/app-presets-dark.png" width="1280" height="820" alt="Current Omalux interface with the preset catalogue" />
+					<div class="slide slide-styles" aria-hidden="true">
+					<img class="shot-dark" src="/app-styles-dark.png" width="1280" height="820" alt="Current Omalux interface with the style catalogue" />
 					</div>
 				</div>
 				<div class="keys">
@@ -122,13 +122,13 @@ import SiteFooter from '../components/SiteFooter.astro';
 				function show(view) {
 					gallery.dataset.slide = view;
 					gallery.querySelector(".slide-filters").setAttribute("aria-hidden", String(view !== "filters"));
-					gallery.querySelector(".slide-presets").setAttribute("aria-hidden", String(view !== "presets"));
+					gallery.querySelector(".slide-styles").setAttribute("aria-hidden", String(view !== "styles"));
 				}
 				function sync() {
 					clearInterval(timer);
 					if (reducedMotion.matches) { show("filters"); return; }
 					if (ready && !document.hidden) {
-						timer = setInterval(() => show(gallery.dataset.slide === "filters" ? "presets" : "filters"), 2000);
+						timer = setInterval(() => show(gallery.dataset.slide === "filters" ? "styles" : "filters"), 2000);
 					}
 				}
 				Promise.all([...gallery.querySelectorAll("img")].map(image => image.decode()))

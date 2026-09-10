@@ -21,19 +21,19 @@ light/dark theme and uses a sun/moon button to switch modes.
 
 ## Screenshot
 
-The website and repository README share real screenshots of the current darktable-based development UI. The editing view is `public/app-screenshot-dark.png`; the preset view is `public/app-presets-dark.png`. Both website themes use these same images, matching the app's current dark appearance. Keep the development-preview label visible.
+The website and repository README share real screenshots of the current darktable-based development UI. The editing view is `public/app-screenshot-dark.png`; the style view is `public/app-styles-dark.png`. Both website themes use these same images, matching the app's current dark appearance. Keep the development-preview label visible.
 
 Generate both from this repository root with the app checked out alongside it as `../omalux`, or set `OMALUX_APP_ROOT` to its absolute path:
 
 ```bash
 scripts/screenshots.sh
 # Or capture one view:
-scripts/screenshot.sh ../omalux/assets/images/beach-volleyball.jpg /tmp/omalux-presets.png presets
+scripts/screenshot.sh ../omalux/assets/images/beach-volleyball.jpg /tmp/omalux-styles.png styles
 ```
 
 The scripts build the current native app if needed and capture its real QML window with the shared beach photograph at 1280×820 logical pixels and 2× display scale (2560×1640 PNG). They use separate temporary app settings and darktable databases. The running editing session stays untouched. GTK/OpenCL still require a working desktop session, although the Qt window is captured offscreen. Native build dependencies and Python 3 are required. Existing outputs survive failed captures.
 
-Review both images before committing. The gallery alternates editing and preset views; page light/dark switching changes the website colors, not the captured application's theme.
+Review both images before committing. The gallery alternates editing and style views; page light/dark switching changes the website colors, not the captured application's theme.
 
 ## Deployment
 

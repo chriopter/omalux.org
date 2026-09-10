@@ -27,5 +27,5 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-.presets-stage-*/
+.styles-stage-*/
 __pycache__/
