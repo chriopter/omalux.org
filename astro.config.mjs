@@ -6,5 +6,5 @@ import cloudflare from '@astrojs/cloudflare';
 // https://astro.build/config
 export default defineConfig({
   adapter: cloudflare(),
-  redirects: { '/presets': '/styles' }
+  redirects: { '/presets': '/styles', '/darktable': '/cameras' }
 });

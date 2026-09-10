@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "generate-types": "wrangler types",
-    "generate:styles": "python3 scripts/generate-styles.py"
+    "generate:styles": "python3 scripts/generate-styles.py",
+    "generate:cameras": "python3 scripts/generate-cameras.py"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.2.3",

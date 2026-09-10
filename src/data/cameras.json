@@ -1,0 +1,87 @@
+[
+  {
+    "id": "apple/iphone",
+    "name": "Omalux Apple iPhone: embedded lens correction",
+    "description": "Apple iPhone: embedded lens correction",
+    "maker": "Apple",
+    "model": "iPhone%",
+    "module": "lens correction",
+    "automatic": true,
+    "files": [
+      "iphone.dtpreset"
+    ]
+  },
+  {
+    "id": "dji/all",
+    "name": "Omalux DJI: embedded lens correction",
+    "description": "DJI: embedded lens correction",
+    "maker": "DJI",
+    "model": "%",
+    "module": "lens correction",
+    "automatic": true,
+    "files": [
+      "all.dtpreset"
+    ]
+  },
+  {
+    "id": "fujifilm/all",
+    "name": "Omalux Fujifilm: embedded lens correction",
+    "description": "Fujifilm: embedded lens correction",
+    "maker": "FUJIFILM",
+    "model": "%",
+    "module": "lens correction",
+    "automatic": true,
+    "files": [
+      "all.dtpreset"
+    ]
+  },
+  {
+    "id": "fujifilm/x-t10",
+    "name": "Omalux Fujifilm X-T10 input profile",
+    "description": "Fujifilm X-T10: input profile rebuilt from the camera matrix",
+    "maker": "FUJIFILM",
+    "model": "X-T10",
+    "module": "input color profile",
+    "automatic": false,
+    "files": [
+      "x-t10.dtpreset",
+      "x-t10.icc"
+    ]
+  },
+  {
+    "id": "google/pixel",
+    "name": "Omalux Google Pixel: embedded lens correction",
+    "description": "Google Pixel: embedded lens correction",
+    "maker": "Google",
+    "model": "Pixel%",
+    "module": "lens correction",
+    "automatic": true,
+    "files": [
+      "pixel.dtpreset"
+    ]
+  },
+  {
+    "id": "olympus/all",
+    "name": "Omalux Olympus: embedded lens correction",
+    "description": "Olympus: embedded lens correction",
+    "maker": "OLYMPUS%",
+    "model": "%",
+    "module": "lens correction",
+    "automatic": true,
+    "files": [
+      "all.dtpreset"
+    ]
+  },
+  {
+    "id": "om-system/all",
+    "name": "Omalux OM System: embedded lens correction",
+    "description": "OM System: embedded lens correction",
+    "maker": "OM Digital%",
+    "model": "%",
+    "module": "lens correction",
+    "automatic": true,
+    "files": [
+      "all.dtpreset"
+    ]
+  }
+]

@@ -16,9 +16,10 @@ Edit `src/pages/index.astro` for the landing page and `public/` for images
 and other static assets. Run `npm run build` to check the production build.
 
 Pages: `/` introduces the app, `/styles` is the gallery of looks (see
-[styles.md](styles.md)), and `/darktable` explains how to install the styles
-and camera presets in plain darktable. That page reads the generated
-catalogue for its counts, so it stays in step with the gallery.
+[styles.md](styles.md)), and `/cameras` lists the camera presets. Both pages
+end with the steps to install their files in plain darktable and link to each
+other. `/cameras` is built from `src/data/cameras.json`; refresh it from an app
+checkout with `npm run generate:cameras` after the camera catalogue changes.
 
 The Lux wordmark is `public/assets/omalux-logo.svg`; `public/favicon.svg` and
 `public/favicon.ico` use its pixel sun. The header adapts the logo to the selected
