@@ -2,7 +2,7 @@
   "version": 1,
   "name": "Neutral",
   "group": "Essentials",
-  "description": "Converted from Omalux v0. Approximate darktable look; calibration pending.",
+  "description": "Neutral leaves the photograph as it is.",
   "modules": [
     {
       "name": "sharpen",

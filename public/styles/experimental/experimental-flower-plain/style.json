@@ -2,8 +2,24 @@
   "version": 1,
   "name": "Flower Plain",
   "group": "Experimental",
-  "description": "Converted from Omalux v0. Approximate darktable look; calibration pending.",
+  "description": "Strong local contrast.",
   "modules": [
+    {
+      "name": "color balance rgb",
+      "enabled": true
+    },
+    {
+      "name": "tone equalizer",
+      "enabled": true
+    },
+    {
+      "name": "astrophoto denoise",
+      "enabled": false
+    },
+    {
+      "name": "local contrast",
+      "enabled": true
+    },
     {
       "name": "sharpen",
       "enabled": false

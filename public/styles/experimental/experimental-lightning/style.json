@@ -2,15 +2,31 @@
   "version": 1,
   "name": "Lightning",
   "group": "Experimental",
-  "description": "Converted from Omalux v0. Approximate darktable look; calibration pending.",
+  "description": "Among the darkest in the catalogue and sharpening.",
   "modules": [
     {
-      "name": "sharpen",
+      "name": "color balance rgb",
+      "enabled": true
+    },
+    {
+      "name": "tone equalizer",
+      "enabled": true
+    },
+    {
+      "name": "astrophoto denoise",
       "enabled": false
     },
     {
+      "name": "local contrast",
+      "enabled": true
+    },
+    {
+      "name": "sharpen",
+      "enabled": true
+    },
+    {
       "name": "vignetting",
-      "enabled": false
+      "enabled": true
     },
     {
       "name": "grain",
@@ -26,7 +42,7 @@
     },
     {
       "name": "contrast brightness saturation",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "exposure",

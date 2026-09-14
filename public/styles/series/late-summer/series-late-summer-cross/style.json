@@ -2,8 +2,28 @@
   "version": 1,
   "name": "Late Summer Cross",
   "group": "Series · Late Summer",
-  "description": "Converted from Omalux v0. Approximate darktable look; calibration pending.",
+  "description": "Among the brightest in the catalogue.",
   "modules": [
+    {
+      "name": "rgb curve",
+      "enabled": true
+    },
+    {
+      "name": "color balance rgb",
+      "enabled": true
+    },
+    {
+      "name": "tone equalizer",
+      "enabled": true
+    },
+    {
+      "name": "astrophoto denoise",
+      "enabled": false
+    },
+    {
+      "name": "local contrast",
+      "enabled": true
+    },
     {
       "name": "sharpen",
       "enabled": false
@@ -26,7 +46,7 @@
     },
     {
       "name": "contrast brightness saturation",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "exposure",

@@ -2,15 +2,31 @@
   "version": 1,
   "name": "Matte",
   "group": "Film",
-  "description": "Converted from Omalux v0. Approximate darktable look; calibration pending.",
+  "description": "Strong local contrast and a clear vignette.",
   "modules": [
+    {
+      "name": "color balance rgb",
+      "enabled": true
+    },
+    {
+      "name": "tone equalizer",
+      "enabled": true
+    },
+    {
+      "name": "astrophoto denoise",
+      "enabled": false
+    },
+    {
+      "name": "local contrast",
+      "enabled": true
+    },
     {
       "name": "sharpen",
       "enabled": false
     },
     {
       "name": "vignetting",
-      "enabled": false
+      "enabled": true
     },
     {
       "name": "grain",
@@ -26,7 +42,7 @@
     },
     {
       "name": "contrast brightness saturation",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "exposure",

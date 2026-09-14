@@ -2,11 +2,31 @@
   "version": 1,
   "name": "Flower",
   "group": "Experimental",
-  "description": "Converted from Omalux v0. Approximate darktable look; calibration pending.",
+  "description": "A curve that deepens the shadows and opens the highlights, visible grain, a clear vignette and sharpening.",
   "modules": [
     {
-      "name": "sharpen",
+      "name": "rgb curve",
+      "enabled": true
+    },
+    {
+      "name": "color balance rgb",
+      "enabled": true
+    },
+    {
+      "name": "tone equalizer",
+      "enabled": true
+    },
+    {
+      "name": "astrophoto denoise",
       "enabled": false
+    },
+    {
+      "name": "local contrast",
+      "enabled": false
+    },
+    {
+      "name": "sharpen",
+      "enabled": true
     },
     {
       "name": "vignetting",
@@ -14,7 +34,7 @@
     },
     {
       "name": "grain",
-      "enabled": false
+      "enabled": true
     },
     {
       "name": "LUT 3D",
@@ -26,7 +46,7 @@
     },
     {
       "name": "contrast brightness saturation",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "exposure",

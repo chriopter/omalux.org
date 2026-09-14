@@ -2,11 +2,31 @@
   "version": 1,
   "name": "Cinema",
   "group": "Experimental",
-  "description": "Converted from Omalux v0. Approximate darktable look; calibration pending.",
+  "description": "A curve that lifts the shadows, strong local contrast and a clear vignette.",
   "modules": [
     {
-      "name": "sharpen",
+      "name": "rgb curve",
       "enabled": true
+    },
+    {
+      "name": "color balance rgb",
+      "enabled": true
+    },
+    {
+      "name": "tone equalizer",
+      "enabled": true
+    },
+    {
+      "name": "astrophoto denoise",
+      "enabled": false
+    },
+    {
+      "name": "local contrast",
+      "enabled": true
+    },
+    {
+      "name": "sharpen",
+      "enabled": false
     },
     {
       "name": "vignetting",
@@ -26,7 +46,7 @@
     },
     {
       "name": "contrast brightness saturation",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "exposure",

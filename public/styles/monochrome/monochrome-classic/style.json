@@ -2,7 +2,7 @@
   "version": 1,
   "name": "Classic",
   "group": "Monochrome",
-  "description": "Converted from Omalux v0. Approximate darktable look; calibration pending.",
+  "description": "All colour taken out and firm contrast.",
   "modules": [
     {
       "name": "sharpen",

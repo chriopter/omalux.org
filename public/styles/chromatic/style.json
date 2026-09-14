@@ -2,7 +2,7 @@
   "version": 1,
   "name": "Chromatic",
   "group": "Essentials",
-  "description": "Omalux: vivid color, crisp contrast and a gentle exposure lift.",
+  "description": "Noticeably fuller colour and firm contrast.",
   "modules": [
     {
       "name": "sharpen",

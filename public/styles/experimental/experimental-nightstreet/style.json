@@ -2,11 +2,27 @@
   "version": 1,
   "name": "Nightstreet",
   "group": "Experimental",
-  "description": "Converted from Omalux v0. Approximate darktable look; calibration pending.",
+  "description": "A clear vignette.",
   "modules": [
     {
-      "name": "sharpen",
+      "name": "color balance rgb",
       "enabled": true
+    },
+    {
+      "name": "tone equalizer",
+      "enabled": true
+    },
+    {
+      "name": "astrophoto denoise",
+      "enabled": false
+    },
+    {
+      "name": "local contrast",
+      "enabled": true
+    },
+    {
+      "name": "sharpen",
+      "enabled": false
     },
     {
       "name": "vignetting",
@@ -26,7 +42,7 @@
     },
     {
       "name": "contrast brightness saturation",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "exposure",
