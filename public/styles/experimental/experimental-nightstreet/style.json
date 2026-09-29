@@ -13,15 +13,7 @@
       "enabled": true
     },
     {
-      "name": "astrophoto denoise",
-      "enabled": false
-    },
-    {
       "name": "local contrast",
-      "enabled": true
-    },
-    {
-      "name": "sharpen",
       "enabled": false
     },
     {
@@ -30,14 +22,10 @@
     },
     {
       "name": "grain",
-      "enabled": false
-    },
-    {
-      "name": "LUT 3D",
       "enabled": true
     },
     {
-      "name": "shadows and highlights",
+      "name": "LUT 3D",
       "enabled": true
     },
     {
@@ -51,7 +39,7 @@
   ],
   "preview": {
     "source": "assets/images/beach-volleyball.jpg",
-    "darktable_version": "5.6.0",
+    "darktable_version": "5.6.1",
     "width": 640,
     "height": 427
   }

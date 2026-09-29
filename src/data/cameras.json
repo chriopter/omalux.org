@@ -1,5 +1,41 @@
 [
   {
+    "id": "all/colour-noise",
+    "name": "Omalux Every camera: colour noise reduction",
+    "description": "Every camera: colour noise reduction",
+    "maker": "%",
+    "model": "%",
+    "module": "nlmeans",
+    "automatic": true,
+    "files": [
+      "colour-noise.dtpreset"
+    ]
+  },
+  {
+    "id": "all/sharpen",
+    "name": "Omalux Every camera: capture sharpening",
+    "description": "Every camera: capture sharpening",
+    "maker": "%",
+    "model": "%",
+    "module": "sharpen",
+    "automatic": true,
+    "files": [
+      "sharpen.dtpreset"
+    ]
+  },
+  {
+    "id": "apple/iphone-xs",
+    "name": "Omalux Apple iPhone XS: exposure",
+    "description": "Apple iPhone XS: exposure",
+    "maker": "Apple",
+    "model": "iPhone XS",
+    "module": "rgblevels",
+    "automatic": true,
+    "files": [
+      "iphone-xs.dtpreset"
+    ]
+  },
+  {
     "id": "apple/iphone",
     "name": "Omalux Apple iPhone: embedded lens correction",
     "description": "Apple iPhone: embedded lens correction",
@@ -9,6 +45,42 @@
     "automatic": true,
     "files": [
       "iphone.dtpreset"
+    ]
+  },
+  {
+    "id": "canon/eos-6d",
+    "name": "Omalux Canon EOS 6D: exposure",
+    "description": "Canon EOS 6D: exposure",
+    "maker": "Canon%",
+    "model": "%EOS 6D",
+    "module": "rgblevels",
+    "automatic": true,
+    "files": [
+      "eos-6d.dtpreset"
+    ]
+  },
+  {
+    "id": "canon/eos-70d",
+    "name": "Omalux Canon EOS 70D: exposure",
+    "description": "Canon EOS 70D: exposure",
+    "maker": "Canon%",
+    "model": "%EOS 70D",
+    "module": "rgblevels",
+    "automatic": true,
+    "files": [
+      "eos-70d.dtpreset"
+    ]
+  },
+  {
+    "id": "canon/powershot-sx100-is",
+    "name": "Omalux Canon PowerShot SX100 IS: exposure",
+    "description": "Canon PowerShot SX100 IS: exposure",
+    "maker": "Canon%",
+    "model": "%SX100 IS",
+    "module": "rgblevels",
+    "automatic": true,
+    "files": [
+      "powershot-sx100-is.dtpreset"
     ]
   },
   {
@@ -24,6 +96,18 @@
     ]
   },
   {
+    "id": "dji/fc220",
+    "name": "Omalux DJI FC220: exposure",
+    "description": "DJI FC220: exposure",
+    "maker": "DJI",
+    "model": "FC220",
+    "module": "rgblevels",
+    "automatic": true,
+    "files": [
+      "fc220.dtpreset"
+    ]
+  },
+  {
     "id": "fujifilm/all",
     "name": "Omalux Fujifilm: embedded lens correction",
     "description": "Fujifilm: embedded lens correction",
@@ -33,6 +117,18 @@
     "automatic": true,
     "files": [
       "all.dtpreset"
+    ]
+  },
+  {
+    "id": "fujifilm/x-t10-exposure",
+    "name": "Omalux Fujifilm X-T10: exposure",
+    "description": "Fujifilm X-T10: exposure",
+    "maker": "FUJIFILM%",
+    "model": "X-T10",
+    "module": "rgblevels",
+    "automatic": true,
+    "files": [
+      "x-t10-exposure.dtpreset"
     ]
   },
   {
@@ -61,6 +157,18 @@
     ]
   },
   {
+    "id": "hasselblad/l1d",
+    "name": "Omalux Hasselblad L1D: embedded lens correction and vignetting",
+    "description": "Hasselblad L1D: embedded lens correction and vignetting",
+    "maker": "Hasselblad",
+    "model": "L1D%",
+    "module": "lens correction",
+    "automatic": true,
+    "files": [
+      "l1d.dtpreset"
+    ]
+  },
+  {
     "id": "olympus/all",
     "name": "Omalux Olympus: embedded lens correction",
     "description": "Olympus: embedded lens correction",
@@ -73,6 +181,18 @@
     ]
   },
   {
+    "id": "olympus/e-m1",
+    "name": "Omalux Olympus E-M1: exposure",
+    "description": "Olympus E-M1: exposure",
+    "maker": "OLYMPUS%",
+    "model": "E-M1",
+    "module": "rgblevels",
+    "automatic": true,
+    "files": [
+      "e-m1.dtpreset"
+    ]
+  },
+  {
     "id": "om-system/all",
     "name": "Omalux OM System: embedded lens correction",
     "description": "OM System: embedded lens correction",
@@ -82,6 +202,30 @@
     "automatic": true,
     "files": [
       "all.dtpreset"
+    ]
+  },
+  {
+    "id": "panasonic/all",
+    "name": "Omalux Panasonic: embedded lens correction",
+    "description": "Panasonic: embedded lens correction",
+    "maker": "Panasonic",
+    "model": "%",
+    "module": "lens correction",
+    "automatic": true,
+    "files": [
+      "all.dtpreset"
+    ]
+  },
+  {
+    "id": "sigma/fp",
+    "name": "Omalux Sigma fp: embedded lens correction",
+    "description": "Sigma fp: embedded lens correction",
+    "maker": "SIGMA%",
+    "model": "%fp%",
+    "module": "lens correction",
+    "automatic": true,
+    "files": [
+      "fp.dtpreset"
     ]
   }
 ]

@@ -13,16 +13,8 @@
       "enabled": true
     },
     {
-      "name": "astrophoto denoise",
-      "enabled": false
-    },
-    {
       "name": "local contrast",
-      "enabled": true
-    },
-    {
-      "name": "sharpen",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "vignetting",
@@ -37,10 +29,6 @@
       "enabled": true
     },
     {
-      "name": "shadows and highlights",
-      "enabled": true
-    },
-    {
       "name": "contrast brightness saturation",
       "enabled": false
     },
@@ -51,7 +39,7 @@
   ],
   "preview": {
     "source": "assets/images/beach-volleyball.jpg",
-    "darktable_version": "5.6.0",
+    "darktable_version": "5.6.1",
     "width": 640,
     "height": 427
   }
