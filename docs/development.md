@@ -37,7 +37,7 @@ scripts/screenshots.sh
 scripts/screenshot.sh ../omalux/assets/images/beach-volleyball.jpg /tmp/omalux-styles.png styles
 ```
 
-The scripts build the current native app if needed and capture its real QML window with the shared beach photograph at 1280×820 logical pixels and 2× display scale (2560×1640 PNG). They use separate temporary app settings and darktable databases. The running editing session stays untouched. GTK/OpenCL still require a working desktop session, although the Qt window is captured offscreen. Native build dependencies and Python 3 are required. Existing outputs survive failed captures.
+The scripts build the current native app if needed and capture its real QML window with the shared beach photograph at 1280×820 pixels and 1× scale (1280×820 PNG); the offscreen capture at 2× draws only part of the window. They use separate temporary app settings and darktable databases. The running editing session stays untouched. GTK/OpenCL still require a working desktop session, although the Qt window is captured offscreen. Native build dependencies and Python 3 are required. Existing outputs survive failed captures.
 
 Review both images before committing. The gallery alternates editing and style views; page light/dark switching changes the website colors, not the captured application's theme.
 

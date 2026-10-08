@@ -5,7 +5,7 @@ site_root="$(cd -- "$script_dir/.." && pwd)"
 app_root="${OMALUX_APP_ROOT:-$site_root/../omalux}"
 if [[ ${1:-} == --help || ${1:-} == -h ]]; then
   echo 'Usage: screenshot.sh [INPUT_PHOTO [OUTPUT_PNG [filters|styles]]]'
-  echo 'Capture the current darktable frontend at 2x scale; requires the native build dependencies and a desktop session for GTK/OpenCL.'
+  echo 'Capture the current darktable frontend at 1x scale (the offscreen 2x capture draws only part of the window); requires the native build dependencies and a desktop session for GTK/OpenCL.'
   exit 0
 fi
 python3 - "$app_root" "$site_root" "$@" <<'PY'
@@ -28,7 +28,7 @@ with tempfile.TemporaryDirectory(prefix='omalux-website-shot-') as tmp:
     script = tmp / 'steps.json'
     steps = [{'panel': 1 if panel == 'styles' else 0}, {'capture': str(capture)}]
     script.write_text(json.dumps(steps))
-    env = os.environ | {'QT_QPA_PLATFORM': 'offscreen', 'QT_SCALE_FACTOR': '2',
+    env = os.environ | {'QT_QPA_PLATFORM': 'offscreen', 'QT_SCALE_FACTOR': '1',
         'QT_FORCE_STDERR_LOGGING': '1', 'QT_QUICK_BACKEND': 'rhi', 'QSG_RHI_BACKEND': 'opengl', 'XDG_CONFIG_HOME': str(tmp / 'config'),
         'OMALUX_SMOKE_SCRIPT': str(script)}
     # A private development session preserves the user's current image and settings.
