@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Cinema",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "A curve that lifts the shadows, strong local contrast and a clear vignette.",
   "modules": [
     {

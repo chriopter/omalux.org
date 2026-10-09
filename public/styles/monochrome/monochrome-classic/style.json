@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Classic",
   "group": "Monochrome",
+  "family": "Monochrome",
+  "subgroup": "",
   "description": "All colour taken out and firm contrast.",
   "modules": [
     {

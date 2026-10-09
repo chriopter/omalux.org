@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Neutral",
   "group": "Essentials",
+  "family": "Essentials",
+  "subgroup": "",
   "description": "Neutral leaves the photograph as it is.",
   "modules": [
     {

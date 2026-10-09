@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Lamp",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "A clear vignette and sharpening.",
   "modules": [
     {

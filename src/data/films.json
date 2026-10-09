@@ -1,0 +1,2658 @@
+{
+  "groups": [
+    {
+      "id": "dhh",
+      "label": "DHH",
+      "folder": "catalog/camera/dhh",
+      "lut_root": "catalog",
+      "films": [
+        {
+          "name": "Agfa Scala 200",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "agfa-scala-200/c.png",
+                "agfa-scala-200/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-agfa-scala-200-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "agfa-scala-200/l.png",
+                "agfa-scala-200/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-agfa-scala-200-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "Agfa Vista 100",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "agfa-vista-100/c.png",
+                "agfa-vista-100/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-agfa-vista-100-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "agfa-vista-100/l.png",
+                "agfa-vista-100/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-agfa-vista-100-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "Agfa Vista 400",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "agfa-vista-400/c.png",
+                "agfa-vista-400/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-agfa-vista-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "agfa-vista-400/l.png",
+                "agfa-vista-400/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-agfa-vista-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "Agfa Vista 800",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "agfa-vista-800/c.png",
+                "agfa-vista-800/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-agfa-vista-800-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "agfa-vista-800/l.png",
+                "agfa-vista-800/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-agfa-vista-800-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "Optima 100 II",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "optima-100-ii/c.png",
+                "optima-100-ii/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-optima-100-ii-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "optima-100-ii/l.png",
+                "optima-100-ii/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-optima-100-ii-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "Precisa 100 XP",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "precisa-100-xp/c.png",
+                "precisa-100-xp/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-precisa-100-xp-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "precisa-100-xp/l.png",
+                "precisa-100-xp/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-precisa-100-xp-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "RSX 200 II",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "rsx-200-ii/c.png",
+                "rsx-200-ii/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-rsx-200-ii-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "rsx-200-ii/l.png",
+                "rsx-200-ii/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-rsx-200-ii-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "RSX 50 II",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "rsx-50-ii/c.png",
+                "rsx-50-ii/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-rsx-50-ii-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "rsx-50-ii/l.png",
+                "rsx-50-ii/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-rsx-50-ii-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "Ultra 100",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "ultra-100/c.png",
+                "ultra-100/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-ultra-100-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "ultra-100/l.png",
+                "ultra-100/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-ultra-100-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "Ultra 50",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "ultra-50/c.png",
+                "ultra-50/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-ultra-50-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "ultra-50/l.png",
+                "ultra-50/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/agfa-ultra-50-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Agfa"
+        },
+        {
+          "name": "160S",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "160s/c.png",
+                "160s/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-160s-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "160s/l.png",
+                "160s/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-160s-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "400H⁺¹",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "400h-plus-1/c.png",
+                "400h-plus-1/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-400h-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "400h-plus-1/l.png",
+                "400h-plus-1/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-400h-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji 160C",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-160c/c.png",
+                "fuji-160c/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-160c-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-160c/l.png",
+                "fuji-160c/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-160c-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji 400H",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-400h/c.png",
+                "fuji-400h/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-400h-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-400h/l.png",
+                "fuji-400h/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-400h-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji 800Z",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-800z/c.png",
+                "fuji-800z/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-800z-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-800z/l.png",
+                "fuji-800z/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-800z-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Astia 100F",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-astia-100f/c.png",
+                "fuji-astia-100f/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-astia-100f-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-astia-100f/l.png",
+                "fuji-astia-100f/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-astia-100f-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Fortia SP",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-fortia-sp/c.png",
+                "fuji-fortia-sp/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fortia-sp-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-fortia-sp/l.png",
+                "fuji-fortia-sp/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fortia-sp-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji FP-100c",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-fp-100c/c.png",
+                "fuji-fp-100c/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fp-100c-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-fp-100c/l.png",
+                "fuji-fp-100c/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fp-100c-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji FP-100c Neg",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-fp-100c-neg/c.png",
+                "fuji-fp-100c-neg/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fp-100c-neg-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-fp-100c-neg/l.png",
+                "fuji-fp-100c-neg/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fp-100c-neg-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji FP-3000b",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-fp-3000b/c.png",
+                "fuji-fp-3000b/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fp-3000b-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-fp-3000b/l.png",
+                "fuji-fp-3000b/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fp-3000b-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji FP-3000b Neg",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-fp-3000b-neg/c.png",
+                "fuji-fp-3000b-neg/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fp-3000b-neg-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-fp-3000b-neg/l.png",
+                "fuji-fp-3000b-neg/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-fp-3000b-neg-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Neopan 1600",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-neopan-1600/c.png",
+                "fuji-neopan-1600/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-neopan-1600-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-neopan-1600/l.png",
+                "fuji-neopan-1600/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-neopan-1600-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Neopan 400",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-neopan-400/c.png",
+                "fuji-neopan-400/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-neopan-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-neopan-400/l.png",
+                "fuji-neopan-400/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-neopan-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Provia 100F",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-provia-100f/c.png",
+                "fuji-provia-100f/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-provia-100f-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-provia-100f/l.png",
+                "fuji-provia-100f/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-provia-100f-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Provia 400X",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-provia-400x/c.png",
+                "fuji-provia-400x/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-provia-400x-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-provia-400x/l.png",
+                "fuji-provia-400x/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-provia-400x-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Reala 100",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-reala-100/c.png",
+                "fuji-reala-100/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-reala-100-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Superia 100",
+          "variants": [
+            {
+              "variant": "L",
+              "files": [
+                "fuji-superia-100/l.png",
+                "fuji-superia-100/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-superia-100-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Superia 1600",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-superia-1600/c.png",
+                "fuji-superia-1600/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-superia-1600-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-superia-1600/l.png",
+                "fuji-superia-1600/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-superia-1600-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Superia 400",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-superia-400/c.png",
+                "fuji-superia-400/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-superia-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-superia-400/l.png",
+                "fuji-superia-400/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-superia-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Superia 800",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-superia-800/c.png",
+                "fuji-superia-800/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-superia-800-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-superia-800/l.png",
+                "fuji-superia-800/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-superia-800-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji T64",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-t64/c.png",
+                "fuji-t64/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-t64-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-t64/l.png",
+                "fuji-t64/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-t64-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Velvia 100",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-velvia-100/c.png",
+                "fuji-velvia-100/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-velvia-100-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-velvia-100/l.png",
+                "fuji-velvia-100/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-velvia-100-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Velvia 100F",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-velvia-100f/c.png",
+                "fuji-velvia-100f/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-velvia-100f-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-velvia-100f/l.png",
+                "fuji-velvia-100f/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-velvia-100f-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Fuji Velvia 50",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "fuji-velvia-50/c.png",
+                "fuji-velvia-50/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-velvia-50-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "fuji-velvia-50/l.png",
+                "fuji-velvia-50/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-fuji-velvia-50-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Provia 400X XP",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "provia-400x-xp/c.png",
+                "provia-400x-xp/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-provia-400x-xp-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "provia-400x-xp/l.png",
+                "provia-400x-xp/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-provia-400x-xp-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Provia 400X⁺¹",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "provia-400x-plus-1/c.png",
+                "provia-400x-plus-1/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-provia-400x-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "provia-400x-plus-1/l.png",
+                "provia-400x-plus-1/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-provia-400x-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Sensia 100",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "sensia-100/c.png",
+                "sensia-100/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-sensia-100-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "sensia-100/l.png",
+                "sensia-100/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-sensia-100-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "Sensia 100 XP",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "sensia-100-xp/c.png",
+                "sensia-100-xp/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-sensia-100-xp-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "sensia-100-xp/l.png",
+                "sensia-100-xp/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/fuji-sensia-100-xp-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Fuji"
+        },
+        {
+          "name": "HP5⁺¹",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "hp5-plus-1/c.png",
+                "hp5-plus-1/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-hp5-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "hp5-plus-1/l.png",
+                "hp5-plus-1/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-hp5-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Ilford"
+        },
+        {
+          "name": "HP5⁻¹",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "hp5-minus-1/c.png",
+                "hp5-minus-1/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-hp5-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "hp5-minus-1/l.png",
+                "hp5-minus-1/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-hp5-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Ilford"
+        },
+        {
+          "name": "Ilford Delta 3200",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "ilford-delta-3200/c.png",
+                "ilford-delta-3200/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-ilford-delta-3200-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "ilford-delta-3200/l.png",
+                "ilford-delta-3200/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-ilford-delta-3200-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Ilford"
+        },
+        {
+          "name": "Ilford HP5",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "ilford-hp5/c.png",
+                "ilford-hp5/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-ilford-hp5-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "ilford-hp5/l.png",
+                "ilford-hp5/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-ilford-hp5-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Ilford"
+        },
+        {
+          "name": "Pan F Plus 50",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "pan-f-plus-50/c.png",
+                "pan-f-plus-50/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-pan-f-plus-50-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "pan-f-plus-50/l.png",
+                "pan-f-plus-50/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/ilford-pan-f-plus-50-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Ilford"
+        },
+        {
+          "name": "E100VS XP",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "e100vs-xp/c.png",
+                "e100vs-xp/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-e100vs-xp-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "e100vs-xp/l.png",
+                "e100vs-xp/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-e100vs-xp-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Ektachrome 64",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "ektachrome-64/c.png",
+                "ektachrome-64/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-ektachrome-64-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "ektachrome-64/l.png",
+                "ektachrome-64/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-ektachrome-64-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Ektachrome 64T",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "ektachrome-64t/c.png",
+                "ektachrome-64t/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-ektachrome-64t-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "ektachrome-64t/l.png",
+                "ektachrome-64t/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-ektachrome-64t-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Ektar 25",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "ektar-25/c.png",
+                "ektar-25/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-ektar-25-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "ektar-25/l.png",
+                "ektar-25/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-ektar-25-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Elite Chrome 160T",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "elite-chrome-160t/c.png",
+                "elite-chrome-160t/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-elite-chrome-160t-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "elite-chrome-160t/l.png",
+                "elite-chrome-160t/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-elite-chrome-160t-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Elite II 50",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "elite-ii-50/c.png",
+                "elite-ii-50/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-elite-ii-50-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "elite-ii-50/l.png",
+                "elite-ii-50/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-elite-ii-50-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak BW400CN",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-bw400cn/c.png",
+                "kodak-bw400cn/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-bw400cn-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-bw400cn/l.png",
+                "kodak-bw400cn/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-bw400cn-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak E100G",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-e100g/c.png",
+                "kodak-e100g/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-e100g-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-e100g/l.png",
+                "kodak-e100g/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-e100g-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak E100VS",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-e100vs/c.png",
+                "kodak-e100vs/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-e100vs-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-e100vs/l.png",
+                "kodak-e100vs/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-e100vs-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak E200",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-e200/c.png",
+                "kodak-e200/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-e200-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-e200/l.png",
+                "kodak-e200/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-e200-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Ektar 100",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-ektar-100/c.png",
+                "kodak-ektar-100/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-ektar-100-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-ektar-100/l.png",
+                "kodak-ektar-100/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-ektar-100-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Gold 100",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-gold-100/c.png",
+                "kodak-gold-100/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-gold-100-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-gold-100/l.png",
+                "kodak-gold-100/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-gold-100-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Gold 200",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-gold-200/c.png",
+                "kodak-gold-200/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-gold-200-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-gold-200/l.png",
+                "kodak-gold-200/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-gold-200-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Max 800",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-max-800/c.png",
+                "kodak-max-800/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-max-800-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-max-800/l.png",
+                "kodak-max-800/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-max-800-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Portra 160",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-portra-160/c.png",
+                "kodak-portra-160/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-160-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-portra-160/l.png",
+                "kodak-portra-160/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-160-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Portra 160 NC",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-portra-160-nc/c.png",
+                "kodak-portra-160-nc/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-160-nc-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-portra-160-nc/l.png",
+                "kodak-portra-160-nc/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-160-nc-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Portra 160 VC",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-portra-160-vc/c.png",
+                "kodak-portra-160-vc/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-160-vc-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-portra-160-vc/l.png",
+                "kodak-portra-160-vc/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-160-vc-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Portra 400",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-portra-400/c.png",
+                "kodak-portra-400/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-portra-400/l.png",
+                "kodak-portra-400/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Portra 400 NC",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-portra-400-nc/c.png",
+                "kodak-portra-400-nc/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-400-nc-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-portra-400-nc/l.png",
+                "kodak-portra-400-nc/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-400-nc-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Portra 400 UC",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-portra-400-uc/c.png",
+                "kodak-portra-400-uc/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-400-uc-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-portra-400-uc/l.png",
+                "kodak-portra-400-uc/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-400-uc-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Portra 400 VC",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-portra-400-vc/c.png",
+                "kodak-portra-400-vc/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-400-vc-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-portra-400-vc/l.png",
+                "kodak-portra-400-vc/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-400-vc-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Portra 800",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-portra-800/c.png",
+                "kodak-portra-800/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-800-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-portra-800/l.png",
+                "kodak-portra-800/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-portra-800-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak Royal 400",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-royal-400/c.png",
+                "kodak-royal-400/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-royal-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-royal-400/l.png",
+                "kodak-royal-400/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-royal-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak T-MAX 3200",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-t-max-3200/c.png",
+                "kodak-t-max-3200/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-t-max-3200-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-t-max-3200/l.png",
+                "kodak-t-max-3200/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-t-max-3200-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak TRI-X 400",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-tri-x-400/c.png",
+                "kodak-tri-x-400/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-tri-x-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-tri-x-400/l.png",
+                "kodak-tri-x-400/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-tri-x-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak TRI-X 400 +",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-tri-x-400-plus/c.png",
+                "kodak-tri-x-400-plus/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-tri-x-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-tri-x-400-plus/l.png",
+                "kodak-tri-x-400-plus/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-tri-x-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak UM 400",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-um-400/c.png",
+                "kodak-um-400/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-um-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-um-400/l.png",
+                "kodak-um-400/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-um-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Kodak UM 800",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "kodak-um-800/c.png",
+                "kodak-um-800/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-um-800-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "kodak-um-800/l.png",
+                "kodak-um-800/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-kodak-um-800-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Plus-X 125",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "plus-x-125/c.png",
+                "plus-x-125/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-plus-x-125-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "plus-x-125/l.png",
+                "plus-x-125/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-plus-x-125-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Portra 100T",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "portra-100t/c.png",
+                "portra-100t/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-100t-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "portra-100t/l.png",
+                "portra-100t/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-100t-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Portra 160⁺¹",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "portra-160-plus-1/c.png",
+                "portra-160-plus-1/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-160-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "portra-160-plus-1/l.png",
+                "portra-160-plus-1/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-160-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Portra 400⁺²",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "portra-400-plus-2/c.png",
+                "portra-400-plus-2/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "portra-400-plus-2/l.png",
+                "portra-400-plus-2/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Portra 400⁺¹",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "portra-400-plus-1/c.png",
+                "portra-400-plus-1/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-400-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "portra-400-plus-1/l.png",
+                "portra-400-plus-1/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-400-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Portra 800⁺¹",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "portra-800-plus-1/c.png",
+                "portra-800-plus-1/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-800-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "portra-800-plus-1/l.png",
+                "portra-800-plus-1/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portra-800-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Portrait XPS 160",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "portrait-xps-160/c.png",
+                "portrait-xps-160/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portrait-xps-160-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "portrait-xps-160/l.png",
+                "portrait-xps-160/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-portrait-xps-160-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Tri-X 320",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "tri-x-320/c.png",
+                "tri-x-320/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-tri-x-320-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "tri-x-320/l.png",
+                "tri-x-320/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-tri-x-320-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "TRI-X⁺¹",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "tri-x-plus-1/c.png",
+                "tri-x-plus-1/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-tri-x-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "tri-x-plus-1/l.png",
+                "tri-x-plus-1/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-tri-x-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "TRI-X⁻¹",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "tri-x-minus-1/c.png",
+                "tri-x-minus-1/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-tri-x-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "tri-x-minus-1/l.png",
+                "tri-x-minus-1/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/kodak-tri-x-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Kodak"
+        },
+        {
+          "name": "Polaroid 665",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "polaroid-665/c.png",
+                "polaroid-665/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-polaroid-665-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "polaroid-665/l.png",
+                "polaroid-665/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-polaroid-665-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Polaroid"
+        },
+        {
+          "name": "Polaroid 665 Neg",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "polaroid-665-neg/c.png",
+                "polaroid-665-neg/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-polaroid-665-neg-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "polaroid-665-neg/l.png",
+                "polaroid-665-neg/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-polaroid-665-neg-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Polaroid"
+        },
+        {
+          "name": "Polaroid 669",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "polaroid-669/c.png",
+                "polaroid-669/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-polaroid-669-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "polaroid-669/l.png",
+                "polaroid-669/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-polaroid-669-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Polaroid"
+        },
+        {
+          "name": "Polaroid 690",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "polaroid-690/c.png",
+                "polaroid-690/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-polaroid-690-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "polaroid-690/l.png",
+                "polaroid-690/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-polaroid-690-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Polaroid"
+        },
+        {
+          "name": "PX-100UV+",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "px-100uv-plus/c.png",
+                "px-100uv-plus/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-px-100uv-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "px-100uv-plus/l.png",
+                "px-100uv-plus/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-px-100uv-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Polaroid"
+        },
+        {
+          "name": "PX-680",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "px-680/c.png",
+                "px-680/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-px-680-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "px-680/l.png",
+                "px-680/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-px-680-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Polaroid"
+        },
+        {
+          "name": "PX-70",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "px-70/c.png",
+                "px-70/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-px-70-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "px-70/l.png",
+                "px-70/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-px-70-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Polaroid"
+        },
+        {
+          "name": "Time-Zero Polaroid",
+          "variants": [
+            {
+              "variant": "C",
+              "files": [
+                "time-zero-polaroid/c.png",
+                "time-zero-polaroid/c.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-time-zero-polaroid-c.webp",
+                "width": 240,
+                "height": 160
+              }
+            },
+            {
+              "variant": "L",
+              "files": [
+                "time-zero-polaroid/l.png",
+                "time-zero-polaroid/l.dtpreset"
+              ],
+              "thumbnail": {
+                "image": "/cameras/dhh/polaroid-time-zero-polaroid-l.webp",
+                "width": 240,
+                "height": 160
+              }
+            }
+          ],
+          "brand": "Polaroid"
+        }
+      ]
+    }
+  ]
+}

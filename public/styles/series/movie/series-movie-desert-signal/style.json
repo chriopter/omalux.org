@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Desert Signal",
   "group": "Series · Movie",
+  "family": "Series",
+  "subgroup": "Movie",
   "description": "Among the brightest in the catalogue and sharpening.",
   "modules": [
     {

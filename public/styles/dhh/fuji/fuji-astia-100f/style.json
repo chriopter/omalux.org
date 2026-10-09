@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "name": "Fuji Astia 100F",
+  "group": "DHH · Fuji",
+  "family": "DHH",
+  "subgroup": "Fuji",
+  "description": "Fitted to a target rendering of this look on a standard camera profile.",
+  "modules": [
+    {
+      "name": "color balance rgb",
+      "enabled": true
+    },
+    {
+      "name": "tone equalizer",
+      "enabled": true
+    },
+    {
+      "name": "vignetting",
+      "enabled": false
+    },
+    {
+      "name": "grain",
+      "enabled": true
+    },
+    {
+      "name": "LUT 3D",
+      "enabled": true
+    },
+    {
+      "name": "exposure",
+      "enabled": true
+    }
+  ],
+  "preview": {
+    "source": "assets/images/beach-volleyball.jpg",
+    "darktable_version": "5.6.1",
+    "width": 640,
+    "height": 427
+  }
+}

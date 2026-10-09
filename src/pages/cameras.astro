@@ -3,6 +3,28 @@ import SiteHead from '../components/SiteHead.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import cameras from '../data/cameras.json';
+import filmData from '../data/films.json';
+
+interface Variant { variant: string; files: string[]; description?: string; thumbnail?: { image: string; width: number; height: number }; }
+interface Film { name: string; brand?: string; variants: Variant[]; }
+interface FilmGroup { id: string; label: string; folder: string; lut_root: string | null; films: Film[]; }
+// What a group of film profiles is, in the site's words.
+const filmNotes: Record<string, string> = {
+  dhh: 'Film profiles of the DHH set, converted to lookup tables that work with any camera.',
+};
+const filmGroups = (filmData.groups as FilmGroup[]).map(group => {
+  const variants = [...new Set(group.films.flatMap(film => film.variants.map(v => v.variant)).filter(Boolean))].sort();
+  const brands = [...new Set(group.films.map(film => film.brand ?? ''))];
+  return {
+    ...group, variants, note: filmNotes[group.id] ?? '',
+    profiles: group.films.reduce((sum, film) => sum + film.variants.length, 0),
+    pictured: group.films.some(film => film.variants.some(v => v.thumbnail)),
+    brands: brands.map(brand => ({ name: brand, films: group.films.filter(film => (film.brand ?? '') === brand) })),
+  };
+});
+const list = (items: string[]) => items.length < 2 ? items.join('') : `${items.slice(0, -1).join(', ')} and ${items.at(-1)}`;
+const base = (file: string) => file.split('/').at(-1)!;
+const lut = (variant: Variant) => variant.files.find(file => file.endsWith('.cube') || file.endsWith('.png')) ?? variant.files[0];
 
 const automatic = cameras.filter(camera => camera.automatic);
 const optional = cameras.filter(camera => !camera.automatic);
@@ -49,6 +71,50 @@ const pattern = (value: string) => value.replaceAll('%', '*');
         )}
       </section>
 
+      {filmGroups.map(group => (
+        <section class="table films" id={group.id} data-films>
+          <h2>{group.label} film profiles</h2>
+          <p class="section-lead">{group.note} {group.films.length} films{group.variants.length > 1 && <>, each in the variants {list(group.variants)}</>}: {group.profiles} profiles. Every profile is a lookup table (a 16-bit HALD image) for darktable's <em>LUT 3D</em> module with a preset that selects it.</p>
+          {group.films.length > 12 && (
+            <div class="film-tools">
+              <label class="film-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search {group.label} films</span><input type="search" placeholder="Search films…" autocomplete="off" /></label>
+              <span class="film-count" role="status" aria-live="polite">{group.films.length} films</span>
+            </div>
+          )}
+          {group.brands.map(brand => (
+            <div class="brand">
+              {group.brands.length > 1 && <h3>{brand.name || 'Other'} <span>{brand.films.length.toString().padStart(2, '0')}</span></h3>}
+              <ul class:list={{ pictured: group.pictured }}>
+                {brand.films.map(film => (
+                  <li data-search={`${film.brand ?? ''} ${film.name}`.toLowerCase()}>
+                    {film.variants.some(v => v.thumbnail) && (
+                      <div class="pictures">
+                        {film.variants.filter(v => v.thumbnail).map(v => (
+                          <figure><img src={v.thumbnail!.image} width={v.thumbnail!.width} height={v.thumbnail!.height} alt={`Beach photograph with ${film.name}${v.variant ? ` ${v.variant}` : ''}`} loading="lazy" decoding="async" />{v.variant && <figcaption>{v.variant}</figcaption>}</figure>
+                        ))}
+                      </div>
+                    )}
+                    <div class="who"><strong>{film.name}</strong></div>
+                    <div class="files">{film.variants.map(v => <code title={v.files.join(' · ')}>{group.pictured ? (v.variant || base(lut(v))) : base(lut(v))}</code>)}</div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          <p class="no-films" hidden>No matching films.</p>
+          <div class="install film-install">
+            <h3>Use a film profile</h3>
+            <ol>
+              <li><p>The files come with the same clone, in <code>{group.folder}</code>.</p></li>
+              <li><p>{group.lut_root
+                ? <>Preferences → processing → <em>3D LUT root folder</em>: choose <code>{group.lut_root}</code>. The presets name their lookup table relative to it.</>
+                : <>The presets name their lookup table relative to darktable's <em>3D LUT root folder</em> (preferences → processing), so that folder has to contain the film profiles.</>}</p></li>
+              <li><p>Preferences → <em>presets</em> → import, then select the <code>.dtpreset</code> files. Choose a film in the presets of the <em>LUT 3D</em> module.</p></li>
+            </ol>
+          </div>
+        </section>
+      ))}
+
       <section class="install">
         <h2>Install</h2>
         <ol>
@@ -78,6 +144,25 @@ const pattern = (value: string) => value.replaceAll('%', '*');
     <SiteFooter />
   </body>
 </html>
+<script>
+// Narrow a long list of films by name.
+for (const section of document.querySelectorAll<HTMLElement>('[data-films]')) {
+    const input = section.querySelector<HTMLInputElement>('.film-search input');
+    if (!input) continue;
+    const films = [...section.querySelectorAll<HTMLElement>('li[data-search]')];
+    input.addEventListener('input', () => {
+        const query = input.value.trim().toLowerCase();
+        let found = 0;
+        for (const film of films) {
+            film.hidden = !film.dataset.search!.includes(query);
+            if (!film.hidden) found++;
+        }
+        for (const brand of section.querySelectorAll<HTMLElement>('.brand')) brand.hidden = !brand.querySelector('li[data-search]:not([hidden])');
+        section.querySelector('.film-count')!.textContent = `${found} ${found === 1 ? 'film' : 'films'}`;
+        section.querySelector<HTMLElement>('.no-films')!.hidden = found !== 0;
+    });
+}
+</script>
 <style>
 main { max-width: 1328px; margin: 0 auto; padding: 58px 32px 0; }
 .intro { padding: 12px 0 56px; }
@@ -137,5 +222,38 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
                      border-radius: 6px; padding: 3px 8px; white-space: nowrap; }
 .optional { margin-top: 56px; }
 .hint a { color: var(--fg); text-underline-offset: 4px; }
+.films { margin-top: 72px; scroll-margin-top: 24px; }
+.films .section-lead em { color: var(--fg); font-style: normal; }
+.film-tools { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 8px; }
+.film-search { display: flex; align-items: center; gap: 12px; width: min(390px, 100%); }
+.film-search svg { width: 18px; height: 18px; fill: none; stroke: var(--muted); stroke-width: 1.5; flex-shrink: 0; }
+.film-search input { width: 100%; padding: 12px 0; border: 0; background: none; color: var(--fg); font: inherit; font-size: .9rem; outline-offset: 3px; }
+.film-search input::placeholder { color: var(--muted); }
+.films .film-count { font-size: .75rem; white-space: nowrap; margin: 0; }
+.films .brand h3 { font-size: .74rem; text-transform: uppercase; letter-spacing: .13em; font-weight: 600; margin: 30px 0 14px; }
+.films .brand h3 span { display: inline; color: var(--muted); font-size: .7rem; margin-left: 8px; font-variant-numeric: tabular-nums; letter-spacing: 0; }
+/* Without pictures: plain rows, two columns where there is room. */
+.films ul:not(.pictured) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
+.films ul:not(.pictured) li { grid-template-columns: 1fr auto; padding: 13px 2px; }
+/* With pictures: one card per film, its variants side by side. */
+.films ul.pictured { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 26px 20px; border-top: 0; }
+.films ul.pictured li { display: grid; grid-template-columns: 1fr auto; gap: 10px 12px; align-items: center; align-self: end; padding: 0; border-bottom: 0; }
+.films .pictures { grid-column: 1 / -1; display: flex; gap: 3px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+.films figure { position: relative; flex: 1; min-width: 0; aspect-ratio: 3 / 2; }
+.films figure img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.films figcaption { position: absolute; left: 6px; bottom: 6px; background: #111722bb; color: #fff; font-size: .65rem; padding: 2px 6px; border-radius: 4px; }
+.films ul.pictured strong { font-size: .88rem; font-weight: 500; }
+.no-films { color: var(--muted); padding: 32px 0; font-size: .93rem; }
+.film-install { margin-top: 40px; }
+.film-install h3 { margin-bottom: 18px; }
+.film-install ol { gap: 16px; }
+.film-install ol li { display: block; padding: 0 0 0 44px; border-bottom: 0; }
+.film-install li::before { width: 28px; height: 28px; font-size: .78rem; top: 0; }
+.film-install p { margin-top: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+@media (max-width: 900px) { .films ul:not(.pictured) { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .films ul:not(.pictured) li { grid-template-columns: 1fr auto; } }
+@media (max-width: 600px) { .films ul:not(.pictured) li { grid-template-columns: 1fr; gap: 8px; } .films ul:not(.pictured) .files { justify-content: flex-start; } }
+@media (max-width: 600px) { .films ul.pictured { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; } .films ul.pictured li { grid-template-columns: 1fr; gap: 6px; } .films ul.pictured .files { justify-content: flex-start; } }
 @media (max-width: 760px) { .table li { grid-template-columns: 1fr; gap: 10px; } .table .files { justify-content: flex-start; } }
 </style>

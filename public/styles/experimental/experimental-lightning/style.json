@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Lightning",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "Among the darkest in the catalogue and sharpening.",
   "modules": [
     {

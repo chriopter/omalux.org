@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Grain",
   "group": "Film",
+  "family": "Film",
+  "subgroup": "",
   "description": "Strong local contrast, visible grain and a clear vignette.",
   "modules": [
     {

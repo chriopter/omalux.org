@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Roseglass",
   "group": "Series · Movie",
+  "family": "Series",
+  "subgroup": "Movie",
   "description": "Among the brightest in the catalogue, strong local contrast and visible grain.",
   "modules": [
     {

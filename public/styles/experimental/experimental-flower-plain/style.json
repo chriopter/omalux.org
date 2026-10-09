@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Flower Plain",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "Strong local contrast.",
   "modules": [
     {

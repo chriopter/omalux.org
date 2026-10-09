@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Lough Leane",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "Strong local contrast, visible grain and a clear vignette.",
   "modules": [
     {

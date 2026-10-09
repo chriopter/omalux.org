@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Studio Cut",
   "group": "Series · Movie",
+  "family": "Series",
+  "subgroup": "Movie",
   "description": "Strong local contrast and a clear vignette.",
   "modules": [
     {

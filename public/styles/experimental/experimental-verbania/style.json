@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Verbania",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "A clear vignette.",
   "modules": [
     {

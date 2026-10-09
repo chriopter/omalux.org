@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Negative",
   "group": "Film",
+  "family": "Film",
+  "subgroup": "",
   "description": "Sharpening.",
   "modules": [
     {

@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Chromatic",
   "group": "Essentials",
+  "family": "Essentials",
+  "subgroup": "",
   "description": "Noticeably fuller colour and firm contrast.",
   "modules": [
     {

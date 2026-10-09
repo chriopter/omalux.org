@@ -18,3 +18,4 @@ Requires Node.js 22.12 or newer. Build with `npm run build`.
 The app repository references screenshots through their public website URLs.
 
 - `npm run generate:styles` — render the style gallery using local darktable and the sibling app checkout. See [Style gallery](docs/styles.md).
+- `npm run generate:cameras` — collect the camera presets and film profiles from the app checkout. See [Development](docs/development.md).

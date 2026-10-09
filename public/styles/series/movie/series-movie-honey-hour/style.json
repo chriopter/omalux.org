@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Honey Hour",
   "group": "Series · Movie",
+  "family": "Series",
+  "subgroup": "Movie",
   "description": "0.3 EV brighter, a little more vibrance and a little more local contrast.",
   "modules": [
     {

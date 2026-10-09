@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Warm",
   "group": "Film",
+  "family": "Film",
+  "subgroup": "",
   "description": "Among the brightest in the catalogue.",
   "modules": [
     {

@@ -1,8 +1,16 @@
 ---
-interface Style { id: string; name: string; group: string; description: string; image: string; width: number; height: number; modules: {name: string; enabled: boolean}[]; }
-interface Props { catalog: { original: {image: string}; styles: Style[] }; }
+interface Style { id: string; name: string; group: string; family: string; subgroup: string; description: string; image: string; thumb: string | null; width: number; height: number; modules: {name: string; enabled: boolean}[]; }
+interface Subgroup { name: string; slug: string; styles: Style[]; }
+interface Family { name: string; slug: string; note: string; count: number; large: boolean; teaser: number; divided: boolean; subgroups: Subgroup[]; }
+interface Props { catalog: { original: {image: string}; styles: Style[]; families: Family[] }; }
 const { catalog } = Astro.props;
-const groups = [...new Set(catalog.styles.map(p => p.group))];
+const count = (n: number) => n.toString().padStart(2, '0');
+// Rendered width of a card, so the browser can choose between thumb.webp and preview.webp.
+const sizes = (large: boolean) => large
+  ? '(max-width:550px) 50vw, (max-width:850px) 33vw, (max-width:1150px) 25vw, 250px'
+  : '(max-width:550px) 100vw, (max-width:850px) 50vw, 420px';
+// The page script needs only what the dialog shows.
+const data = { original: catalog.original, styles: catalog.styles.map(({ id, name, group, description, image, modules }) => ({ id, name, group, description, image, modules })) };
 ---
 <section class="gallery" aria-label="Style catalogue">
   <div class="toolbar">
@@ -10,17 +18,23 @@ const groups = [...new Set(catalog.styles.map(p => p.group))];
     <button id="original-toggle" type="button" aria-pressed="false"><span aria-hidden="true">◐</span> Show original</button>
     <span id="style-count" role="status" aria-live="polite">{catalog.styles.length} looks</span>
   </div>
-  <div class="filters" aria-label="Filter styles by group"><button class="filter" data-group="all" aria-pressed="true">All looks <span>{catalog.styles.length}</span></button>{groups.map(group => <button class="filter" data-group={group} aria-pressed="false">{group}</button>)}</div>
+  <div class="filters" aria-label="Filter styles by family"><button class="filter" data-family="all" aria-pressed="true">All looks <span>{catalog.styles.length}</span></button>{catalog.families.map(family => <button class="filter" data-family={family.slug} aria-pressed="false">{family.name} <span>{family.count}</span></button>)}</div>
+  {catalog.families.filter(family => family.divided).map(family => <div class="filters subfilters" data-family={family.slug} aria-label={`Filter ${family.name} looks`} hidden><button class="subfilter" data-subgroup="" aria-pressed="true">All {family.name}</button>{family.subgroups.map(subgroup => <button class="subfilter" data-subgroup={subgroup.slug} aria-pressed="false">{subgroup.name || 'Other'} <span>{subgroup.styles.length}</span></button>)}</div>)}
   <div class="groups">
-    {groups.map(group => <section class="style-group" data-group={group} aria-label={group}>
-      <div class="group-heading"><h2>{group}</h2><span>{catalog.styles.filter(p => p.group === group).length.toString().padStart(2, '0')}</span></div>
-      <div class="grid">{catalog.styles.filter(p => p.group === group).map(p => <button class="style-card" type="button" data-id={p.id} data-search={`${p.name} ${p.group} ${p.description}`.toLowerCase()} aria-label={`Explore ${p.name}`}>
-        <div class="picture"><img src={p.image} data-preview={p.image} width={p.width} height={p.height} alt={`Beach photograph with ${p.name} style`} loading="lazy" decoding="async" /><span class="explore" aria-hidden="true">Compare <span>↗</span></span></div>
-        <div class="caption"><h3>{p.name}</h3><span aria-hidden="true">↗</span></div>
-      </button>)}</div>
-    </section>)}
+    {catalog.families.map(family => { let index = 0; return <section class:list={['style-group', { large: family.large }]} data-family={family.slug} aria-label={family.name}>
+      <div class="group-heading"><h2>{family.name}</h2><span>{count(family.count)}</span></div>
+      {family.note && <p class="group-note">{family.note}</p>}
+      {family.subgroups.map(subgroup => <div class="subgroup" data-subgroup={subgroup.slug}>
+        {family.divided && <h3 class="subgroup-heading">{subgroup.name || 'Other'} <span>{count(subgroup.styles.length)}</span></h3>}
+        <div class="grid">{subgroup.styles.map(p => <button class="style-card" type="button" data-id={p.id} data-more={family.large && index++ >= family.teaser ? '' : undefined} data-search={`${p.name} ${p.group} ${p.description}`.toLowerCase()} aria-label={`Explore ${p.name}`}>
+          <div class="picture"><img src={p.image} srcset={p.thumb ? `${p.thumb} 320w, ${p.image} ${p.width}w` : undefined} sizes={p.thumb ? sizes(family.large) : undefined} width={p.width} height={p.height} alt={`Beach photograph with ${p.name} style`} loading="lazy" decoding="async" /><span class="explore" aria-hidden="true">Compare <span>↗</span></span></div>
+          <div class="caption"><h4>{p.name}</h4><span aria-hidden="true">↗</span></div>
+        </button>)}</div>
+      </div>)}
+      {family.large && <button class="show-family" type="button" data-family={family.slug}>Show all {family.count} {family.name} looks <span aria-hidden="true">→</span></button>}
+    </section>; })}
   </div>
-  <div id="no-styles" hidden><h2>No matching looks</h2><p>Try another name or group.</p><button id="clear-filters" type="button">Clear filters</button></div>
+  <div id="no-styles" hidden><h2>No matching looks</h2><p>Try another name or family.</p><button id="clear-filters" type="button">Clear filters</button></div>
 </section>
 <dialog id="style-dialog" aria-labelledby="detail-name">
   <div class="dialog-header"><span id="detail-group"></span><button id="close-detail" type="button" aria-label="Close style details">✕</button></div>
@@ -32,7 +46,7 @@ const groups = [...new Set(catalog.styles.map(p => p.group))];
   <label class="comparison-control" for="comparison">Style <input id="comparison" type="range" min="0" max="100" value="50" aria-label="Reveal original photograph" /> Original</label>
   <div class="detail-copy"><h2 id="detail-name"></h2><p id="detail-description"></p><details><summary>Applied modules <span id="module-count"></span></summary><ul id="detail-modules"></ul></details></div>
 </dialog>
-<script id="style-data" type="application/json" set:html={JSON.stringify(catalog).replace(/</g, '\\u003c')} />
+<script id="style-data" type="application/json" set:html={JSON.stringify(data).replace(/</g, '\\u003c')} />
 <script src="../scripts/styles.ts"></script>
 <style>
 .gallery { border-top:1px solid var(--line); }
@@ -48,21 +62,32 @@ button { cursor:pointer; }
 #original-toggle[aria-pressed="true"] {border-color:var(--accent);color:var(--accent);}
 #style-count {font-size:.75rem;color:var(--muted);white-space:nowrap;min-width:52px;text-align:right;}
 .filters {display:flex;flex-wrap:wrap;gap:8px;padding-bottom:12px;}
-.filter {border:1px solid transparent;border-radius:6px;padding:9px 13px;background:none;color:var(--muted);font-size:.78rem;}
-.filter:hover {color:var(--fg);background:var(--surface);}
-.filter[aria-pressed="true"] {color:var(--fg);background:var(--surface);border-color:var(--line);}
-.filter span {opacity:.5;margin-left:7px;font-size:.7rem;}
+.subfilters {padding-top:12px;border-top:1px solid var(--line);}
+.filter,.subfilter {border:1px solid transparent;border-radius:6px;padding:9px 13px;background:none;color:var(--muted);font-size:.78rem;}
+.filter:hover,.subfilter:hover {color:var(--fg);background:var(--surface);}
+.filter[aria-pressed="true"],.subfilter[aria-pressed="true"] {color:var(--fg);background:var(--surface);border-color:var(--line);}
+.filter span,.subfilter span {opacity:.5;margin-left:7px;font-size:.7rem;}
 .group-heading {display:flex;align-items:center;gap:12px;margin:32px 0 18px;}
 .group-heading h2 {font-size:.74rem;text-transform:uppercase;letter-spacing:.13em;font-weight:600;}
 .group-heading span {color:var(--muted);font-size:.7rem;font-variant-numeric:tabular-nums;}
+.group-note {color:var(--muted);font-size:.85rem;line-height:1.6;margin:-8px 0 20px;max-width:640px;}
+.subgroup-heading {font-size:.86rem;font-weight:550;margin:26px 0 14px;}
+.subgroup-heading span {color:var(--muted);font-size:.7rem;font-weight:400;margin-left:8px;font-variant-numeric:tabular-nums;}
+.subgroup:first-of-type .subgroup-heading {margin-top:0;}
 .grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px;}
+.large .grid {grid-template-columns:repeat(5,minmax(0,1fr));gap:22px 16px;}
+.large .caption {padding-top:10px;}
+.large .caption h4 {font-size:.82rem;}
+.large .caption>span,.large .explore {display:none;}
+.show-family {display:block;margin-top:22px;background:none;border:1px solid var(--line);color:var(--fg);border-radius:7px;padding:11px 16px;font-size:.82rem;}
+.show-family:hover {border-color:var(--accent);color:var(--accent);}
 .style-card {background:none;border:0;color:var(--fg);text-align:left;min-width:0;border-radius:9px;}
 .picture {position:relative;aspect-ratio:3/2;overflow:hidden;border-radius:8px;background:var(--surface);border:1px solid var(--line);}
 .picture img {display:block;width:100%;height:100%;object-fit:contain;}
 .explore {position:absolute;bottom:12px;right:12px;display:flex;gap:18px;background:#111722df;color:#fff;padding:8px 11px;border-radius:5px;font-size:.7rem;opacity:0;transition:opacity .15s;}
 .style-card:hover .explore,.style-card:focus-visible .explore {opacity:1;}
 .caption {display:flex;justify-content:space-between;align-items:center;padding:15px 1px 2px;}
-.caption h3 {font-size:.94rem;font-weight:500;letter-spacing:-.015em;}
+.caption h4 {font-size:.94rem;font-weight:500;letter-spacing:-.015em;overflow-wrap:anywhere;}
 .caption>span {font-size:1.1rem;color:var(--muted);}
 .style-card:hover .caption {color:var(--accent);}
 #no-styles {padding:64px 16px;text-align:center;}
@@ -91,7 +116,8 @@ dialog::backdrop {background:#03060ccc;backdrop-filter:blur(8px);}
 #detail-modules {display:flex;gap:8px;flex-wrap:wrap;list-style:none;margin-top:14px;}
 #detail-modules :global(li) {background:var(--bg);padding:6px 9px;border:1px solid var(--line);border-radius:5px;font-size:.72rem;color:var(--muted);}
 .sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
-@media(max-width:850px) {.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px;}}
-@media(max-width:550px) {.grid{grid-template-columns:1fr;gap:24px;} .toolbar{flex-wrap:wrap;gap:10px;} .search{width:100%;} #original-toggle{margin-left:0;} #style-count{margin-left:auto;} .filters{gap:4px;} .filter{padding:8px 10px;} .group-heading{margin-top:26px;} }
+@media(max-width:1150px) {.large .grid{grid-template-columns:repeat(4,minmax(0,1fr));}}
+@media(max-width:850px) {.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px;} .large .grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:550px) {.grid{grid-template-columns:1fr;gap:24px;} .large .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;} .subfilters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;} .subfilter{white-space:nowrap;flex-shrink:0;} .toolbar{flex-wrap:wrap;gap:10px;} .search{width:100%;} #original-toggle{margin-left:0;} #style-count{margin-left:auto;} .filters{gap:4px;} .filter,.subfilter{padding:8px 10px;} .group-heading{margin-top:26px;} }
 @media(prefers-reduced-motion:reduce) {.explore{transition:none;}}
 </style>

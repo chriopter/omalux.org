@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Matte",
   "group": "Film",
+  "family": "Film",
+  "subgroup": "",
   "description": "Strong local contrast and a clear vignette.",
   "modules": [
     {

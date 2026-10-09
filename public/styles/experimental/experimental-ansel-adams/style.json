@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Ansel Adams",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "Among the darkest in the catalogue, visible grain and a light vignette.",
   "modules": [
     {

@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Kodak",
   "group": "Film",
+  "family": "Film",
+  "subgroup": "",
   "description": "Among the brightest in the catalogue and visible grain.",
   "modules": [
     {

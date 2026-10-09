@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Nightstreet",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "A clear vignette.",
   "modules": [
     {

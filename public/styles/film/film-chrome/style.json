@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Chrome",
   "group": "Film",
+  "family": "Film",
+  "subgroup": "",
   "description": "1.0 EV brighter and a little more vibrance.",
   "modules": [
     {

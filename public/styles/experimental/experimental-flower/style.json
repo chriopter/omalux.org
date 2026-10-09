@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Flower",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "A curve that deepens the shadows and opens the highlights, visible grain, a clear vignette and sharpening.",
   "modules": [
     {

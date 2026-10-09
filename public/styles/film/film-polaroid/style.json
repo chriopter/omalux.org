@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Polaroid",
   "group": "Film",
+  "family": "Film",
+  "subgroup": "",
   "description": "Visible grain and a clear vignette.",
   "modules": [
     {

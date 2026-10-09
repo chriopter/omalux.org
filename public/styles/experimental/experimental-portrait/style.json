@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Portrait",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "A curve that lifts the shadows, visible grain and a clear vignette.",
   "modules": [
     {

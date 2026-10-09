@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Forge",
   "group": "Experimental",
+  "family": "Experimental",
+  "subgroup": "",
   "description": "Among the brightest in the catalogue, a curve that lifts the shadows, a clear vignette and sharpening.",
   "modules": [
     {
